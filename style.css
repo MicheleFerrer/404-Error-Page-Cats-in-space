@@ -1,0 +1,195 @@
+/* Write your CSS code here */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron';
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: static;
+    color: white;
+    opacity: 0.95;
+    max-width: 100%;
+    text-shadow: 0 0 10px rgb(181, 154, 181), 0 0 20px rgb(217, 34, 217), 0 0 30px rgb(44, 134, 199), 
+    0 0 45px rgba(65, 9, 133, 0.855), 0 0 55px #0ff, 0 0 66px 
+    rgb(159, 26, 146), 0 0 70px rgb(50, 33, 33);
+    font-family: 'Orbitron';
+}
+
+
+#error{
+    font-size: 6rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    font-family: 'orbitron';
+    
+}
+.animate__flash{
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+}
+
+.animate__lightSpeedInLeft{
+    animation-duration: 1.5s;
+}
+
+#subtitle{
+   font-size: 0.7rem;
+   font-style: italic;
+margin-bottom: 50px;
+
+}
+svg {
+    display: inline-flex;
+    padding-left: 10px;
+}
+#subtitle2{
+    font-size: 1.5rem;
+}
+
+#cat-cartoon{
+bottom: 0;
+top: 0;
+margin-top: 560px;
+right: 0;
+margin-right: 150px;
+position: fixed;
+}
+
+.cat-ship{
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 400px;
+    background-blend-mode: darken;
+    position: absolute;
+    opacity: 0.99;
+    overflow: hidden;
+    max-width: 25%;
+}
+
+
+@media screen and (max-width: 580px) {
+    .cat-ship{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    *{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-content: center;
+        max-width: 100%;
+    }
+}
+
+
+.dropdown-message{
+    display: flex;
+    position: fixed;
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 450px;
+    margin-right: 250px;
+    font-size: 10px;
+    right: 0;
+}
+
+
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+.star:nth-child(1) {
+    top: 25%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.star:nth-child(2) {
+    top: 40%;
+    left: 70%;
+    animation-delay: 1s;
+}
+
+.star:nth-child(3) {
+    top: 70%;
+    left: 30%;
+    animation-delay: 2s;
+}
+
+.star:nth-child(4) {
+    top: 80%;
+    left: 60%;
+    animation-delay: 3s;
+}
+
+.star:nth-child(5) {
+    top: 40%;
+    left: 40%;
+    animation-delay: 4s;
+}
+
+.star:nth-child(6) {
+    top: 60%;
+    left: 50%;
+    animation-delay: 2.5s;
+}
+.star:nth-child(7) {
+    bottom: 160%;
+    right: 60%;
+    animation-delay: 4.5s;
+}
+.star:nth-child(8) {
+    bottom: 10%;
+    right: 30%;
+    animation-delay: 5s;
+}
+.star:nth-child(9) {
+    top: 90%;
+    right: 90%;
+    animation-delay: 1.8s;
+}
+
+.stars {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.star {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgb(211, 255, 248);
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: twinkle 1.5s infinite ease-in-out;
+    box-shadow: 0 0.5px 10px rgba(254, 255, 255, 0.7);
+}
